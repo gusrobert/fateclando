@@ -5,7 +5,7 @@ from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.primitives import hashes
 
 server_ip = input("Digite o IP do servidor: ")
-public_key_path = input("Digite o caminho da chave pública do servidor (arquivo .pem): ")
+public_key_path = input("Digite o caminho da chave pública do servidor: ")
 
 with open(public_key_path, 'rb') as key_file:
     public_key_bytes = key_file.read()
